@@ -66,5 +66,6 @@ cp libEGL.so ~/code/$cef_pack/Release
 cp locales/* ~/code/$cef_pack/Release/locales
 cp v8_context_snapshot.bin ~/code/$cef_pack/Release
 
-tar cfvj $cef_pack.tar.bz2 $cef_pack/
-zip -r $cef_pack.zip $cef_pack/
+cd $cef_pack
+tar cfvj $cef_pack.tar.bz2 ./Release
+zip -r $cef_pack.zip ./Release
